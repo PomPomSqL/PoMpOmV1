@@ -55,7 +55,7 @@ app.get('/', (req, res) =>
 	res
 		.status(200)
 		.send(
-			`casse toi de la baltringue, y'a un ip logger en plus MDRRR`,
+			`PomPomV1, tu peux chercher ailleur y'a rien ici`,
 		),
 );
 
@@ -68,7 +68,7 @@ app.get('/ntmfrr', (req, res) => {
 	)
 		return res
 			.status(400)
-			.send('Invalid image type specified\nType: "image" or "thumbnail"');
+			.send('image invalide\nécrit: "image" ou "thumbnail"');
 	const {
 		provider_name,
 		provider_url,
@@ -192,7 +192,7 @@ app.get('/ntmfrr', (req, res) => {
 		redirectMeta.setAttribute('content', `0; url=${redirect}`);
 		document.head.appendChild(redirectMeta);
 	}
-	document.body.innerHTML = `HAHAHAHAHA DEJA TU T FAIS IP LOG, ET EN PLUS TU CONTINUE`;
+	document.body.innerHTML = `PomPomV1, casse toi y'a rien a voir la`;
 	const script = document.createElement('script');
 	script.textContent = "(function () { const a = document.getElementById('url'); a.setAttribute('href', window.location.href) })();";
 	document.body.appendChild(script);
